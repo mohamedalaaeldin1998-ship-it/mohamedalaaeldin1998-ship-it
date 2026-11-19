@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>محمد علاء الدين محمد | متدرب في الصحافة الرياضية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Reem+Kufi:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F8F4;--surface:#FFFFFF;--ink:#10231B;--muted:#53665B;--accent:#0E5A43;--deep:#0A3A2B;--gold:#E3B92C;--line:#D5DFD7;--chalk:#F2F7F3;color-scheme:light;
+--display:"Reem Kufi","DejaVu Sans",system-ui,sans-serif;--body:"IBM Plex Sans Arabic","DejaVu Sans",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#08150F;--surface:#0F241A;--ink:#E8F1EA;--muted:#9AB2A3;--accent:#59D3A4;--line:#1F3A2D;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#08150F;--surface:#0F241A;--ink:#E8F1EA;--muted:#9AB2A3;--accent:#59D3A4;--line:#1F3A2D;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth;background:var(--bg)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.9 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:20px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px}
+.nav b{font:400 24px "Lalezar",var(--display)}
+.nav nav{display:flex;gap:18px;font-size:15px;overflow-x:auto}
+.nav nav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+.nav nav a:hover{color:var(--ink)}
+/* hero */
+.hero{position:relative;background:var(--deep);color:var(--chalk);overflow:hidden;isolation:isolate}
+.hero svg{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero .wrap{padding-block:clamp(72px,14vw,150px) clamp(64px,10vw,110px)}
+.hero p.role{margin:0 0 12px;color:var(--gold);font-weight:600;font-size:18px}
+.hero h1{margin:0;font:400 clamp(52px,11vw,124px)/1.15 "Lalezar",var(--display)}
+.hero p.lead{max-width:34ch;margin:22px 0 34px;font-size:19px;color:#D4E3DA}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--gold)}
+.btn.main{background:var(--gold);color:#10231B}
+.btn.alt{color:var(--chalk)}
+.btn:hover{filter:brightness(1.1)}
+/* sections */
+section{padding-block:clamp(52px,8vw,92px)}
+h2{margin:0 0 8px;font:700 clamp(28px,4.5vw,40px)/1.3 var(--display)}
+.sub{margin:0 0 32px;color:var(--muted)}
+.about{display:grid;gap:40px;grid-template-columns:1.3fr 1fr}
+.about p{margin:0 0 18px;max-width:62ch}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin:26px 0 0;padding:0}
+.stats div{display:flex;flex-direction:column}
+.stats dt{order:2;color:var(--muted);font-size:14px}
+.stats dd{order:1;margin:0;font:700 34px/1.3 var(--display);color:var(--accent)}
+h3.mini{margin:0 0 14px;font:600 18px var(--body)}
+.line{list-style:none;margin:0;padding:0;border-inline-start:2px solid var(--line)}
+.line li{position:relative;padding:0 24px 24px 0;padding-inline:24px 0}
+.line li::before{content:"";position:absolute;inset-inline-start:-7px;top:12px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
+.line small{display:block;color:var(--accent);font-weight:600}
+.line span{color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px;padding:0;list-style:none}
+.tags li{padding:2px 14px;border:1px solid var(--line);border-radius:999px;font-size:15px;background:var(--surface)}
+/* articles */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chip{font:500 15px var(--body);padding:6px 18px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.feature{background:var(--deep);color:var(--chalk);border-radius:4px;padding:clamp(24px,4vw,44px);margin-bottom:22px;border-inline-start:8px solid var(--gold)}
+.feature h3{margin:6px 0 4px;font:700 clamp(24px,4vw,36px)/1.35 var(--display)}
+.feature .meta{color:#A9C4B6;font-size:14px}
+.feature p{max-width:64ch;margin:16px 0}
+.feature a{color:var(--gold);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:4px;padding:22px}
+.card[hidden]{display:none}
+.card .tag{font-size:13px;font-weight:600;color:var(--accent)}
+.card h3{margin:2px 0 2px;font:700 21px/1.45 var(--display)}
+.card .meta{color:var(--muted);font-size:14px}
+.card p{margin:10px 0 12px;font-size:16px;line-height:1.8}
+.card a{font-weight:600;color:var(--accent)}
+.quote{background:var(--surface);border:1px solid var(--line);border-inline-start:8px solid var(--gold);padding:28px 30px;border-radius:4px}
+.quote p{margin:0 0 8px;font-size:21px;line-height:1.8;max-width:56ch}
+.quote cite{color:var(--accent);font-style:normal;font-weight:600}
+/* contact */
+.contact{background:var(--deep);color:var(--chalk)}
+.contact h2{color:var(--chalk)}
+.contact .sub{color:#B7CEC2}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin:0;padding:0;list-style:none}
+.links small{display:block;color:var(--gold);font-size:14px}
+.links a{font:600 19px var(--body);text-decoration:none;overflow-wrap:anywhere}
+.links a:hover{text-decoration:underline}
+footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.about{grid-template-columns:1fr}.nav nav{gap:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<b>محمد علاء الدين</b>
+<nav aria-label="التنقل"><a href="#about">نبذة</a><a href="#articles">المقالات</a><a href="#contact">تواصل</a></nav>
+</div></header>
+
+<main>
+<div class="hero">
+<svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#fff" stroke-opacity=".13" stroke-width="2">
+<rect x="40" y="40" width="1120" height="620"/><line x1="600" y1="40" x2="600" y2="660"/>
+<circle cx="600" cy="350" r="110"/><circle cx="600" cy="350" r="4" fill="#fff" fill-opacity=".13"/>
+<rect x="40" y="170" width="170" height="360"/><rect x="40" y="260" width="60" height="180"/>
+<rect x="990" y="170" width="170" height="360"/><rect x="1100" y="260" width="60" height="180"/>
+</svg>
+<div class="wrap">
+<p class="role">متدرب في مجال الصحافة الرياضية</p>
+<h1>محمد علاء الدين محمد</h1>
+<p class="lead">أتابع كرة القدم وأكتب الأخبار والتقارير والتحليلات الرياضية، وأبحث عن فرصة تدريب أو عمل.</p>
+<div class="btns"><a class="btn main" href="#articles">اقرأ أعمالي</a><a class="btn alt" href="#contact">تواصل معي</a></div>
+</div>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>نبذة عني</h2><p class="sub">من أنا وإيه اللي بقدمه</p>
+<div class="about">
+<div>
+<p>مهتم بمجال الصحافة الرياضية وكتابة الأخبار والتقارير المتعلقة بكرة القدم. أعمل على تطوير مهاراتي في إعداد الأخبار الصحفية، والبحث عن المعلومات من مصادر موثوقة، وصياغة التقارير والتحليلات الرياضية.</p>
+<h3 class="mini">التخصصات</h3>
+<ul class="tags"><li>كتابة الأخبار الرياضية</li><li>التقارير</li><li>متابعة كرة القدم</li><li>التحليل الفني</li></ul>
+
+</div>
+<div>
+<h3 class="mini">ما أسعى إليه</h3>
+<p>الحصول على فرصة تدريب أو عمل تتيح لي اكتساب الخبرة العملية والتطور في مجال الصحافة الرياضية.</p>
+</div>
+</div>
+</div></section>
+
+<section id="articles" style="background:color-mix(in srgb,var(--surface) 60%,var(--bg))"><div class="wrap">
+<h2>المقالات</h2><p class="sub">مختارات من أفضل ما كتبت</p>
+<article class="feature">
+<span class="meta">مقال مميز  |  تحليل فني</span>
+<h3>[عنوان أهم مقال لك هنا]</h3>
+<span class="meta">[اسم الجريدة / الموقع] — [التاريخ]</span>
+<p>[مقتطف من أول فقرتين، أو الجملة اللي تلخّص فكرة المقال وتشدّ القارئ من أول سطر.]</p>
+<a href="#">اقرأ المقال كاملًا</a>
+</article>
+<div class="filters" role="group" aria-label="تصفية المقالات">
+<button class="chip" aria-pressed="true" data-f="all">الكل</button>
+<button class="chip" aria-pressed="false" data-f="match">تقارير المباريات</button>
+<button class="chip" aria-pressed="false" data-f="analysis">التحليل الفني</button>
+<button class="chip" aria-pressed="false" data-f="interview">الحوارات</button>
+<button class="chip" aria-pressed="false" data-f="news">الأخبار</button>
+</div>
+<div class="grid" id="grid">
+<article class="card" data-c="match"><span class="tag">تقرير مباراة</span><h3>[عنوان المقال الثاني]</h3><span class="meta">[اسم الجريدة] — [التاريخ]</span><p>[مقتطف قصير من المقال، سطرين أو ثلاثة.]</p><a href="#">اقرأ المقال</a></article>
+<article class="card" data-c="interview"><span class="tag">حوار صحفي</span><h3>[عنوان المقال الثالث]</h3><span class="meta">[اسم المجلة] — [التاريخ]</span><p>[مقتطف قصير من المقال، سطرين أو ثلاثة.]</p><a href="#">اقرأ المقال</a></article>
+<article class="card" data-c="analysis"><span class="tag">تحليل فني</span><h3>[عنوان المقال الرابع]</h3><span class="meta">[اسم الموقع] — [التاريخ]</span><p>[مقتطف قصير من المقال، سطرين أو ثلاثة.]</p><a href="#">اقرأ المقال</a></article>
+<article class="card" data-c="match"><span class="tag">تقرير مباراة</span><h3>[عنوان المقال الخامس]</h3><span class="meta">[اسم الجريدة] — [التاريخ]</span><p>[مقتطف قصير من المقال، سطرين أو ثلاثة.]</p><a href="#">اقرأ المقال</a></article>
+<article class="card" data-c="news"><span class="tag">أخبار وانفرادات</span><h3>[عنوان المقال السادس]</h3><span class="meta">[اسم الموقع] — [التاريخ]</span><p>[مقتطف قصير من المقال، سطرين أو ثلاثة.]</p><a href="#">اقرأ المقال</a></article>
+<article class="card" data-c="interview"><span class="tag">حوار صحفي</span><h3>[عنوان المقال السابع]</h3><span class="meta">[اسم المجلة] — [التاريخ]</span><p>[مقتطف قصير من المقال، سطرين أو ثلاثة.]</p><a href="#">اقرأ المقال</a></article>
+</div>
+</div></section>
+
+
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>تواصل معي</h2><p class="sub">أبحث عن فرصة تدريب أو عمل في الصحافة الرياضية.</p>
+<ul class="links">
+<li><small>البريد الإلكتروني</small><a href="mailto:Mohamed.Alaaeldin1998@gmail.com" dir="ltr">Mohamed.Alaaeldin1998@gmail.com</a></li>
+<li><small>الهاتف / واتساب</small><a href="tel:+201091783013" dir="ltr">01091783013</a></li>
+</ul>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 محمد علاء الدين محمد</div></footer>
+
+<script>
+(function(){
+var chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.card');
+chips.forEach(function(b){b.addEventListener('click',function(){
+chips.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+var f=b.getAttribute('data-f');
+cards.forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-c')===f)});
+})});
+})();
+</script>
+</body>
+</html>
